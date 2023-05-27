@@ -11,9 +11,29 @@ body {
     padding-bottom: 25px;
     text-align: left;
     position: relative;
+    border-radius: 5px;
+    height: 200px;
   }
   
-
+  .profile-picture {
+    position: absolute;
+    top: 90%;
+    left: 280px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-picture img {
+    height: 125px; /* Adjust the height as needed */
+    width: 125px; /* Adjust the width as needed */
+    border-radius: 5px;
+    object-fit: cover;
+  }
+    
   h1 {
     padding-bottom: 20px;
   } 
@@ -37,10 +57,12 @@ body {
   
   .university {
     color: rgba(202, 152, 73, 1);
+    font-weight:500;
   }
   
   .place {
     color: rgba(94, 135, 201, 1);
+    font-weight:500;
   }
   
   #school-info {
@@ -90,24 +112,21 @@ body {
   }
   
   .title-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    margin-top: 75px;
+    margin-left: 265px; /* Added this line */
     height: 100%;
   }
   
   .title-wrapper h1,
   .title-wrapper p {
     margin: 0;
-    text-align: center;
   }
   
   .toggle {
     position: absolute;
     top: 50%;
     right: 30px;
-    transform: translateY(-50%);
+    transform: translateY(-350%);
     background: none;
     border: none;
     cursor: pointer;
