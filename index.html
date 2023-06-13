@@ -1,93 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Brogan's Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="images/profile.png" type="image/x-icon">
-  <meta name="description" content="Explore my portfolio to discover impactful product management expertise, innovative contributions, and a unique blend of creativity, technical skills, and strategic thinking. Connect for exciting collaborations and new opportunities in enhancing user experiences and driving business growth.">
-  <script src="script.js"></script>
+  <link rel="icon" href="images/emoji.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brogan's small slice of the internet</title>
+  <style>
+    @font-face { font-family: Overpass; src: url('fonts/Overpass-VariableFont_wght.ttf'); } 
+      h1 {
+         font-family: Overpass
+      }
+
+    body {
+      background-color: #f8f8f8;
+      color: #000;
+      font-family: 'Overpass', Lora, serif;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    p {
+        margin-top: 0px;
+        margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: circle;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      padding-left: 20px;
+    }
+
+    li {
+        margin-bottom: 1rem;
+    }
+
+    .website-link {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+    }
+
+    .website-link a {
+      display: inline-block;
+      width: 120px;
+      height: 65px;
+      margin-right: 10px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 5px;
+    }
+
+    .nav-button {
+      display: inline-block;
+      font-size: 24px;
+      font-weight: bold;
+      text-transform: lowercase;
+      padding: 10px 15px;
+      padding-left: 0px;
+      background-color: transparent;
+      color: #4A4A44;
+      border: none;
+      text-decoration: none;
+      letter-spacing: 0;
+      transition: letter-spacing 0.3s;
+      margin-bottom: 50px;
+    }
+
+    .nav-button:hover {
+      letter-spacing: 5px;
+    }
+
+    .flex-container {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+
+    .left-box {
+      width: 50%;
+      text-align: right;
+      margin-top: 3px;
+      color: #4A4A44;
+    }
+
+    .right-box {
+      margin-left: 40px;
+      text-align: left;
+      width: 100%;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .flex-container {
+        flex-direction: column;
+      }
+
+      .left-box {
+        width: 100%;
+        text-align: left;
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+
+      .right-box {
+        margin-left: 0;
+        text-align: left;
+        width: 100%;
+      }
+    }
+  </style>
 </head>
-<body class="light">
-    <header>
-        <div id="profile-picture" class="box">
-          <img src="images/profile.png" alt="Profile Picture">
+<body>
+  <div class="container">
+    <div class="nav-bar">
+      <a href="#" class="nav-button">brogan</a>
+    </div>
+
+    <div class="flex-container">
+      <div class="left-box">current</div>
+      <div class="right-box">
+        <ul>
+            <li>Exploring interaction design and computational thinking at the University of Michigan</li>
+            <li>Innovating in embedded payments at <a href="https://www.elavon.com" style="color: #2C76C3; font-weight: 700; text-decoration: none;" target="_blank" onmouseover="this.style.color='lightblue'" onmouseout="this.style.color='#2C76C3'">Elavon</a> and applying Generative AI to products at <a href="https://www.usbank.com" style="color: #CC162B; font-weight: 700; text-decoration: none;" target="_blank" onmouseover="this.style.color='lightblue'" onmouseout="this.style.color='#CC162B'">U.S. Bank</a></li>
+            <li>Promoting inclusive learning and developing staff teaching capabilities as an instructional aide for <a href="https://www.elavon.com" style="color: #FFCB05; font-weight: 700; text-decoration: none;" target="_blank" onmouseover="this.style.color='lightblue'" onmouseout="this.style.color='#FFCB05'">EECS 183</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flex-container">
+        <div class="left-box">about</div>
+        <div class="right-box" style="margin-top: 3px;">
+            <p>I enjoy building innovative products that have actual impact. My academic background is in user experience design and computer science.</p>
         </div>
-        <div class="toggle">
-          <img id="toggle-icon" src="images/moon-icon.png" alt="Toggle" onclick="toggleMode()">
+      </div>
+      
+      <div class="flex-container">
+        <div class="left-box">past</div>
+        <div class="right-box">
+          <ul>
+            <li>Growth and productization at <a href="https://www.myhonestpower.com/" style="color: #DE9A51; font-weight: 700; text-decoration: none;" target="_blank" onmouseover="this.style.color='lightblue'" onmouseout="this.style.color='#DE9A51'">Honest Power Solar</a></li>
+            <li>DSP products at <a href="https://www.cadent.tv" style="color: #23EBF0; font-weight: 700; text-decoration: none;" target="_blank" onmouseover="this.style.color='lightblue'" onmouseout="this.style.color='#23EBF0'">Cadent</a></li>
+            <li>Sustainable products at <a href="https://gdsc.community.dev/university-of-michigan-ann-arbor/" style="color: #4285F4; font-weight: 700; text-decoration: none;" target="_blank" onmouseover="this.style.color='lightblue'" onmouseout="this.style.color='#4285F4'">Google DSC</a></li>
+          </ul>
         </div>
-
-      </header>
-      
-      <div id="title-wrapper" class="box">
-        <h1>Brogan Kaczkofsky</h1>
-        <h2>Hey! Welcome to my personal website</h2>
       </div>
 
-  <div id="about" class="box">
-    <h3>👤&nbsp;&nbsp;About Me</h3>
-    <p>I’m currently a senior at the University of Michigan with recent product management experience at Cadent, Honest Power Solar, and U.S. Bank. Seeking full-time APM roles.</p>
-  </div>
-
-  <div class="box">
-    <h3>✉️&nbsp;&nbsp;Contact</h3>
-    <div class="contact-info">
-      <span class="bold">email:</span>
-      <a href="mailto:brogan@umich.edu">brogan@umich.edu</a>
-    </div>
-      
-    <div class="contact-info">
-      <span class="bold">phone:</span>
-      <a href="tel:+16168812602">+1 (616) 881-2602</a>
-    </div>
-  </div>
-
-  <div class="box">
-    <h3>🎒&nbsp;&nbsp;Education</h3>
-    <div id="school-info" class="education-info">
-      <span class="university">University of Michigan</span>
-      <span class="dash">-</span>
-      <span class="place">Ann Arbor</span>
-      <span class="dates">(Aug. 2020 - May 2024)</span>
-    </div>
-      
-    <div id="major-minor" class="education-info">
-      <span class="major">major:</span>
-      <span class="major-info">Information (User Experience Design)</span>
-    </div>
-      
-    <div id="major-minor" class="education-info">
-      <span class="minor">minor:</span>
-      <span class="minor-info">Computer Science</span>
-    </div>
-  </div>
-
-  <div id="products" class="box">
-    <h3>⚙️&nbsp;&nbsp;Products</h3>
-    <div class="usb">
-        <a href="https://www.usbank.com/" class ="usb-title">U.S. Bank</a><span class="usb-title">:</span>
-        <span>creating products with the innovation team at Elavon Labs</span>
-        <span class = "usb-info">(May 2022 - Present)</span>
-        <p class="usb-info">At Elavon Labs, I actively contribute to the development of a cutting-edge Microsoft Teams product that enhances convenience and efficiency by delivering professional merchant services to small businesses in legal, financial, and related sectors through embedded payments. My focus revolves around conducting user testing, gathering feedback, understanding the product development processes, and performing comprehensive market research and analysis to ensure our product stays at the forefront of innovation.</p>
+      <div class="flex-container">
+        <div class="left-box">next</div>
+        <div class="right-box">🤓💻</div>
       </div>
 
-    <div class="hps">
-        <a href="https://www.myhonestpower.com/" class ="hps-title">Honest Power Solar</a><span class="hps-title">:</span>
-        <span>productizing the digital prescence of a solar power startup</span>
-        <span class = "hps-info">(Sept. 2022 - Dec. 2022)</span>
-        <p class="hps-info">I spearheaded the growth and productization of Honest Power Solar, resolving a customer booking bottleneck and achieving a 45% increase in solar installations, increasing gross revenue by $4.5 million and contributing to a total revenue of $17 million. Additionally, I orchestrated brand creation, website prototyping and development, and executed marketing campaigns, resulting in a 35% increase in brand awareness and a 125% growth in website traffic.</p>
+      <div class="flex-container">
+        <div class="left-box">media</div>
+        <div class="right-box" style="margin-top: 3px;">
+            <p>Branding at Kota Energy Group [<a href="https://www.kotasolar.com/#home" style="text-decoration: underline; color: blue;" target="_blank" onmouseover="this.style.color='lightblue'" onmouseout="this.style.color='blue'">site</a>]</p>
+            <p>Bid Shading 101 at Cadent [<a href="https://www.prnewswire.com/news-releases/cadent-aperture-enables-programmatic-guaranteed-bidding-across-addressable-linear-and-ctv-301554771.html" style="text-decoration: underline; color: blue;" target="_blank" onmouseover="this.style.color='lightblue'" onmouseout="this.style.color='blue'">pr newswire</a>] [<a href="https://www.nexttv.com/news/cadent-enables-programmatic-bidding-across-multiple-devices" style="text-decoration: underline; color: blue;" target="_blank" onmouseover="this.style.color='lightblue'" onmouseout="this.style.color='blue'">nexttv</a>]</p>
+            <p>Brother at Kappa Theta Pi [<a href="https://ktpmichigan.com/" style="text-decoration: underline; color: blue;" target="_blank" onmouseover="this.style.color='lightblue'" onmouseout="this.style.color='blue'">site</a>]</p>
+            <p>Jazz at BCJO [<a href="https://www.jazz.org/blog/congratulations-to-the-2020-essentially-ellington-festival-award-winners/" style="text-decoration: underline; color: blue;" target="_blank" onmouseover="this.style.color='lightblue'" onmouseout="this.style.color='blue'">jazz blog</a>] [<a href="https://www.schoolnewsnetwork.org/2020/04/21/the-best-of-jazz/" style="text-decoration: underline; color: blue;" target="_blank" onmouseover="this.style.color='lightblue'" onmouseout="this.style.color='blue'">school news network</a>]</p>
+        </div>
       </div>
 
-      <div class="cadent">
-        <a href="https://cadent.tv/" class ="cadent-title">Cadent</a><span class="cadent-title">:</span>
-        <span>building consumer-facing products at an advanced TV advertising company</span>
-        <span class = "cadent-info">(May 2022 - Aug. 2022)</span>
-        <p class="cadent-info">During my time at Cadent, I thrived in a multi-faceted role, driving impactful product initiatives across various fronts. Conducting comprehensive market research, I effectively communicated insights on programmatic advertising to 40+ executives and stakeholders, fostering operational efficiency within the TV DSP. Simultaneously, I spearheaded a cross-functional team in developing and launching a video player preview product, collaborating with 3 backend engineers to strengthen client relationships and retain over 65 clients. Additionally, I streamlined internal workflows by creating a highly efficient deals dashboard product, leading to a 50% reduction in time spent on information management for the Ad Ops and Inventory teams.</p>
-      </div>
-        
-  </div>
 
-  <footer class="center">
-    <p>&copy; Brogan Kaczkofsky 2023</p>
-  </footer>
 </body>
 </html>
